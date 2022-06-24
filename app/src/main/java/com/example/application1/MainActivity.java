@@ -3,6 +3,7 @@ package com.example.application1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,7 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textHello = findViewById(R.id.text1);
 
+
+    }
+
+    public void onBtnClick (View view){
+        TextView textHello = findViewById(R.id.txtMessage);
+        textHello.setText("HELLO!!");
     }
 }
