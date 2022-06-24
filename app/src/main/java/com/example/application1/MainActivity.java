@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnClick (View view){
         TextView textHello = findViewById(R.id.txtMessage);
-        textHello.setText("HELLO!!");
+        EditText edtTxtName = findViewById(R.id.editTxtName);
+
+        textHello.setText(edtTxtName.getText().toString());
     }
 }
